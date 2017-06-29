@@ -1,0 +1,53 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css);
+.App {
+  text-align: center;
+}
+.App-cell-value {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  color: green;
+}
+.App-cell-label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.App-cell-index {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  top: 0;
+
+  background-image: url(https://cdn.glitch.com/4b63a218-7df4-4d7a-9356-520d4434850e%2Fnumbers.png);
+  background-repeat: no-repeat;
+}
+
+/* Ideally this would be dynamic
+  (I personally would remove the number and have it use one icon then render the number dynamically)
+*/
+.App-cell-index-1 {
+  background-position: 0;
+}
+.App-cell-index-2 {
+  background-position: -42px;
+}
+.App-cell-index-3 {
+  background-position: -84px;
+}
+.App-cell-index-4 {
+  background-position: -126px;
+}
+.show-grid {
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+.show-grid .column {
+  padding: 10px;
+}
+.show-grid .button-col {
+  display: table-cell;
+  height: 100%;
+}
